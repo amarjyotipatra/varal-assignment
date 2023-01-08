@@ -1,0 +1,268 @@
+.nav-bar {
+  position: sticky;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  padding: 30px 50px;
+}
+.empty-space {
+  width: 40vw;
+}
+.options {
+  display: flex;
+  padding: 26px 50px;
+}
+.nav-options {
+  font-size: 18px;
+  padding: 0px 10px;
+}
+.buttonType {
+  background-color: #0078d7;
+  color: white;
+  border-radius: 4px;
+  height: max-content;
+}
+.inputBox {
+  width: 90vw;
+  height: 50px;
+  padding: 0 !important;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.inputBox2 {
+  width: 30%;
+  height: 40px;
+  padding: 0px 50px;
+  border-radius: 4px;
+  outline: 2px solid #0078d7;
+  border: transparent;
+}
+input::placeholder {
+  color: #0078d7;
+}
+input:focus {
+  border-color: #0078d7;
+}
+.header {
+  width: 100vw;
+  height: 22rem;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.header1 {
+  font-size: 18px;
+  color: #0078d7;
+  width: 100%;
+  margin-left: 50px;
+}
+.header2 {
+  width: 48vw;
+  height: fit-content;
+  justify-content: flex-start;
+}
+u {
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+.primary-head {
+  font-family: "Lexand Deca";
+}
+.secondary-head {
+  font-family: "Noto Sans";
+}
+.text1 {
+  color: gray;
+}
+.text2 {
+  background-color: #0078d7;
+  color: white;
+  margin-right: 10px;
+}
+.header3 {
+  width: 48vw;
+  height: 150px;
+  height: fit-content;
+  display: inline;
+  border: 1px solid gray;
+}
+.text4 {
+  margin: 50px;
+  width: 100vw;
+  height: 20px;
+  padding: 10px 10px;
+  color: #0078d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 95%;
+  height: fit-content;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text5 {
+  color: gray;
+}
+.box1 {
+  width: 30%;
+  padding: 30px;
+}
+.text6 {
+  color: yellow;
+}
+.rowCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 200px;
+  margin: 50px 100px;
+  border-radius: 5px;
+}
+.card-text {
+  color: #0078d7;
+}
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.tab1 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  color: #0078d7;
+}
+.text7 {
+  display: inline;
+  color: gray;
+}
+.btn {
+  border: 1px solid #0078d7;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+}
+.tab2 {
+  background-color: #0078d7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: 4px;
+}
+.btn2 {
+  background-color: white;
+  color: #0078d7;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 15px 20px;
+  height: 50px;
+}
+.tab1,
+.tab2:has(p) {
+  padding: 0px 30px;
+  font-family: "Noto Sans";
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    position: sticky;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+  .logo {
+    padding: 5px 20px;
+  }
+  .empty-space {
+    display: none;
+  }
+  .options {
+    display: none;
+  }
+  .hamburger {
+    float: right;
+    content: "";
+    position: absolute;
+    width: 14px;
+    top: 10px;
+    -webkit-box-shadow: 1px 10px 1px 1px #69737d, 1px 16px 1px 1px #69737d,
+      1px 22px 1px 1px #69737d;
+    box-shadow: 0 10px 0 1px #69737d, 0 16px 0 1px #69737d, 0 22px 0 1px #69737d;
+  }
+  .inputBox {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+  }
+  input::placeholder {
+    color: #0078d7;
+  }
+  input:focus {
+    border-color: #0078d7;
+  }
+  .inputBox2 {
+    width: 80%;
+    border-radius: 4px;
+    outline: 2px solid #0078d7;
+    border: transparent;
+  }
+  .header,
+  .header1 {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .box {
+    width: 95%;
+    height: fit-content;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box1 {
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .rowCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 10px 20px;
+    border-radius: 5px;
+  }
+}
